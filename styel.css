@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --primaryYellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    --font: "Figtree", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body {
+    background-color: var(--primaryYellow);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container__blog {
+    display: grid;
+    padding: 1rem;
+    background-color: var(--White);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 385px;
+    border: 1px solid var(--Black);
+    box-shadow: 8px 8px 0 var(--Black);
+}
+
+.container__blog .banner {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container__content {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.category {
+    background-color: var(--primaryYellow);
+    padding: .3rem .8rem; 
+    font-weight: bold;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.date {
+    color: var(--Black);
+    font-size: .9rem;
+}
+
+.container__blog h1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--Black);
+}
+
+.description {
+    color: var(--Grey);
+    line-height: 1.5;
+}
+
+.container__box-author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.container__box-author img {
+    width: 10%;
+    margin-right: 10px;
+}
+
+.container__box-author p {
+    color: var(--Black);
+    font-weight: bold;
+}
